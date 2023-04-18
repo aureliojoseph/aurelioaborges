@@ -4,7 +4,13 @@
   </div>
 </template>
 
-<style>
+<style lang="scss">
+div {
+  h1 {
+    color: brown;
+  }
+}
+
 @media (min-width: 1024px) {
   .about {
     min-height: 100vh;
