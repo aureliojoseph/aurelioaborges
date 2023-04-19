@@ -1,5 +1,5 @@
 /* color palette from <https://github.com/vuejs/theme> */
-:root {
+/* :root {
   --vt-c-white: #ffffff;
   --vt-c-white-soft: #f8f8f8;
   --vt-c-white-mute: #f2f2f2;
@@ -19,10 +19,10 @@
   --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
   --vt-c-text-dark-1: var(--vt-c-white);
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
-}
+} */
 
 /* semantic color variables for this project */
-:root {
+/* :root {
   --color-background: var(--vt-c-white);
   --color-background-soft: var(--vt-c-white-soft);
   --color-background-mute: var(--vt-c-white-mute);
@@ -48,6 +48,30 @@
     --color-heading: var(--vt-c-text-dark-1);
     --color-text: var(--vt-c-text-dark-2);
   }
+} */
+
+:root {
+  --color-text: #afafaf;
+  --color-text-header-1: #f9f9f9;
+  --color-text-header-2: #fff;
+  --color-text-header-3: #d7d7d7;
+  --color-background: #373737;
+  --stroke-color: #5e5454;
+  --surface-color: #666;
+  --highlight-color: #e1e1e1;
+  --switch-bg-url: url(./sun-icon.svg);
+}
+
+.light {
+  --color-text: #373737;
+  --color-text-header-1: #111;
+  --color-text-header-2: #222;
+  --color-text-header-3: #737373;
+  --color-background: #fff;
+  --stroke-color: rgb(242, 230, 242);
+  --surface-color: rgba(93, 90, 150, 0.4);
+  --highlight-color: rgba(217, 179, 217, 0.8);
+  --switch-bg-url: url(./moon-icon.svg);
 }
 
 *,
@@ -65,8 +89,8 @@ body {
   background: var(--color-background);
   transition: color 0.5s, background-color 0.5s;
   line-height: 1.6;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Heebo', sans-serif;
+  font-weight: 500;
   font-size: 15px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
